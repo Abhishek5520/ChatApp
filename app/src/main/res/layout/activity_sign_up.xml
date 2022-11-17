@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign"
+    tools:context=".SignUp">
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:alpha="0"/>
+
+    <Button
+        android:id="@+id/photo_Button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Upload Photo"
+        android:textColor="#B0000000"
+        android:background="@drawable/icon"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="4dp" />
+
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/photo_Button"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="15dp"
+        android:hint="Name"
+        android:textColorHint="#6B000000"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_name"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="15dp"
+        android:hint="Email"
+        android:textColorHint="#6B000000"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/edt_email"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="15dp"
+        android:hint="Password"
+        android:textColorHint="#6B000000"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_password"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/btn_transition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        />
+
+</RelativeLayout>
